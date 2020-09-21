@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MyFirstApplication</string>
-    <string name="button1">Button1</string>
+    <string name="button1">Picasso</string>
     <string name="button2">Button2</string>
     <string name="button3">Button3</string>
+    <string name="buttonLoad">Load Image</string>
+    <string name="hint">Please enter image url</string>
 </resources>
