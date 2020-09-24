@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6C6E78</color>
-    <color name="colorPrimaryDark">#444650</color>
-    <color name="colorAccent">#4f87e4</color>
-    <color name="colorButton">#77d794</color>
-    <color name="colorMainView">#142e42</color>
+    <color name="colorPrimary">#1E3961</color>
+    <color name="colorPrimaryDark">#2C508C</color>
+    <color name="colorAccent">#4285f4</color>
+    <color name="colorButton">#3ddc84</color>
+    <color name="colorMainView">#073042</color>
+    <color name="colorFlagRed">#e30615</color>
+    <color name="colorFlagBlue">#0033a5</color>
+    <color name="colorFlagOrange">#fbad00</color>
+    <color name="colorFlagWhite">#ffffff</color>
+    <color name="colorFlagBlack">#000000</color>
+    <color name="colorFlagStiletto">#9e3139</color>
+    <color name="colorFlagYellow">#fff718</color>
+
 </resources>

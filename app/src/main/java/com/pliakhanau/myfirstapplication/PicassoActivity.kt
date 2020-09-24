@@ -2,13 +2,13 @@ package com.pliakhanau.myfirstapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_picasso.*
 import com.squareup.picasso.Picasso
 
-class MainActivity2 : AppCompatActivity() {
+class PicassoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_picasso)
 
         buttonLoad.setOnClickListener {
 

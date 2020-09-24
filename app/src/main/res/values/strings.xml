@@ -1,8 +1,17 @@
 <resources>
     <string name="app_name">MyFirstApplication</string>
-    <string name="button1">Picasso</string>
-    <string name="button2">Button2</string>
+    <string name="buttonPicasso">Picasso</string>
+    <string name="buttonFlagsAnimation">Flags_Animation</string>
     <string name="button3">Button3</string>
     <string name="buttonLoad">Load Image</string>
     <string name="hint">Please enter image url</string>
+    <string name="buttonFlags">Flags</string>
+    <string name="buttonAnimation">Animation</string>
+    <string name="flagArmenia">Armenia</string>
+    <string name="flagAustria">Austria</string>
+    <string name="flagBelgium">Belgium</string>
+    <string name="flagLatvia">Latvia</string>
+    <string name="flagDenmark">Denmark</string>
+    <string name="flagSpain">Spain</string>
+
 </resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainView"
+    tools:context=".FlagsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFlagArmenia"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="@color/colorFlagRed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="@color/colorFlagBlue" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="@color/colorFlagOrange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/flagArmenia"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFlagAustria"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutFlagArmenia">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="@color/colorFlagRed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="@color/colorFlagWhite" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="@color/colorFlagRed" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/flagAustria"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutFlagBelgium"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutFlagAustria">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:background="@color/colorFlagBlack" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:background="@color/colorFlagYellow" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:background="@color/colorFlagRed" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorMainView"
+            android:gravity="center"
+            android:text="@string/flagBelgium"
+            android:textColor="@color/colorAccent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFlagLatvia"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutFlagBelgium">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="31"
+            android:background="@color/colorFlagStiletto" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="38"
+            android:background="@color/colorFlagWhite" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="31"
+            android:background="@color/colorFlagStiletto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/flagLatvia"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFlagDenmark"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorFlagWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutFlagLatvia">
+
+        <ImageView
+            android:id="@+id/topSquare"
+            android:layout_width="31dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorFlagRed" />
+
+        <ImageView
+            android:id="@+id/topRectangle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/topSquare"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/topSquare"
+            android:background="@color/colorFlagRed" />
+
+        <ImageView
+            android:id="@+id/bottomSquare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/denmarkText"
+            android:layout_below="@id/topSquare"
+            android:layout_alignEnd="@id/topSquare"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorFlagRed" />
+
+        <ImageView
+            android:id="@+id/bottomRectangle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/denmarkText"
+            android:layout_below="@id/topRectangle"
+            android:layout_alignStart="@id/topRectangle"
+            android:layout_alignTop="@id/bottomSquare"
+            android:background="@color/colorFlagRed" />
+
+        <TextView
+            android:id="@+id/denmarkText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorMainView"
+            android:gravity="center"
+            android:text="@string/flagDenmark"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFlagSpain"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutFlagDenmark">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="36"
+            android:background="@color/colorFlagRed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@color/colorFlagYellow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="36"
+            android:background="@color/colorFlagRed" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/flagSpain"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
