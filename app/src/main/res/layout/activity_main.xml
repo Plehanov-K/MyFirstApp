@@ -8,13 +8,13 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonPicasso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
         android:layout_marginEnd="110dp"
         android:background="@drawable/my_button"
-        android:text="@string/button1"
+        android:text="@string/buttonPicasso"
         android:textColor="@color/colorButton"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,19 +25,19 @@
         app:layout_constraintVertical_bias="0.193" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonFlagsAnimation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
         android:layout_marginEnd="110dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/my_button"
-        android:text="@string/button2"
+        android:text="@string/buttonFlagsAnimation"
         android:textColor="@color/colorButton"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPicasso" />
 
     <Button
         android:id="@+id/button3"
@@ -52,5 +52,5 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonFlagsAnimation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

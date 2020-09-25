@@ -10,8 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button1.setOnClickListener {
-            startActivity(Intent(this,MainActivity2::class.java))
+        buttonPicasso.setOnClickListener {
+            startActivity(Intent(this,PicassoActivity::class.java))
         }
+
+        buttonFlagsAnimation.setOnClickListener {
+            startActivity(Intent(this,AnimationFlagsActivity::class.java))
+        }
+
     }
 }
