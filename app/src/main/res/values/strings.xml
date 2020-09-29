@@ -2,7 +2,7 @@
     <string name="app_name">MyFirstApplication</string>
     <string name="buttonPicasso">Picasso</string>
     <string name="buttonFlagsAnimation">Flags_Animation</string>
-    <string name="button3">Button3</string>
+    <string name="vegetables">Vegetables</string>
     <string name="buttonLoad">Load Image</string>
     <string name="hint">Please enter image url</string>
     <string name="buttonFlags">Flags</string>
@@ -13,5 +13,10 @@
     <string name="flagLatvia">Latvia</string>
     <string name="flagDenmark">Denmark</string>
     <string name="flagSpain">Spain</string>
-
+    <string name="nameMinsk">Minsk</string>
+    <string name="potato">Potato</string>
+    <string name="cabbage">Cabbage</string>
+    <string name="beet">Beet</string>
+    <string name="nameGomel">Gomel</string>
+    <string name="nameBrest">Brest</string>
 </resources>

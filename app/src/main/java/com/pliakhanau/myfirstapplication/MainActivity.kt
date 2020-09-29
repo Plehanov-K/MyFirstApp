@@ -18,5 +18,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,AnimationFlagsActivity::class.java))
         }
 
+        buttonVegetables.setOnClickListener {
+            startActivity(Intent(this,VegetablesActivity::class.java))
+        }
+
     }
 }
