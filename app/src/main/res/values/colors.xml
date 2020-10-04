@@ -12,5 +12,6 @@
     <color name="colorFlagBlack">#000000</color>
     <color name="colorFlagStiletto">#9e3139</color>
     <color name="colorFlagYellow">#fff718</color>
+    <color name="colorGold">#E8DD81</color>
 
 </resources>

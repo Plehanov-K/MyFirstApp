@@ -19,4 +19,9 @@
     <string name="beet">Beet</string>
     <string name="nameGomel">Gomel</string>
     <string name="nameBrest">Brest</string>
+    <string name="buttonCoffee">Coffee</string>
+    <string name="btnCollections">Коллекция</string>
+    <string name="btnAddCoffee">Добавить кофе</string>
+    <string name="btnAdd">Добавить</string>
+
 </resources>

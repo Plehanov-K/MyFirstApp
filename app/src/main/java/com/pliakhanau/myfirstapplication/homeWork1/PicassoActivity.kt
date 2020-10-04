@@ -1,7 +1,8 @@
-package com.pliakhanau.myfirstapplication
+package com.pliakhanau.myfirstapplication.homeWork1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.pliakhanau.myfirstapplication.R
 import kotlinx.android.synthetic.main.activity_picasso.*
 import com.squareup.picasso.Picasso
 

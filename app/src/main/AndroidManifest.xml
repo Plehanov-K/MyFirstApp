@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VegetablesActivity"></activity>
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".FlagsActivity" />
-        <activity android:name=".AnimationFlagsActivity" />
-        <activity android:name=".PicassoActivity" />
+        <activity android:name=".homeWork4.CoffeeActivity"></activity>
+        <activity android:name=".homeWork3.VegetablesActivity" />
+        <activity android:name=".homeWork2.AnimationActivity" />
+        <activity android:name=".homeWork2.FlagsActivity" />
+        <activity android:name=".homeWork2.AnimationFlagsActivity" />
+        <activity android:name=".homeWork1.PicassoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
