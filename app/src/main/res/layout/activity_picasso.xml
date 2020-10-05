@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorMainView"
-    tools:context=".PicassoActivity">
+    tools:context=".homeWork1.PicassoActivity">
 
     <EditText
         android:id="@+id/editText"

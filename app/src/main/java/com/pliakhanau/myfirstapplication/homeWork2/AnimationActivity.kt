@@ -1,9 +1,10 @@
-package com.pliakhanau.myfirstapplication
+package com.pliakhanau.myfirstapplication.homeWork2
 
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
+import com.pliakhanau.myfirstapplication.R
 import kotlinx.android.synthetic.main.activity_animation.*
 
 class AnimationActivity : AppCompatActivity() {

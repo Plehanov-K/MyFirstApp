@@ -1,4 +1,4 @@
-package com.pliakhanau.myfirstapplication
+package com.pliakhanau.myfirstapplication.homeWork3
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -10,7 +10,7 @@ import kotlin.random.Random
 
 class MyViewModel : ViewModel() {
 
-    val cityList = listOf(Region.Minsk,Region.Gomel,Region.Brest)
+    val cityList = listOf(Region.Minsk, Region.Gomel, Region.Brest)
     var winner = MutableLiveData<String>()
 
     fun play() {

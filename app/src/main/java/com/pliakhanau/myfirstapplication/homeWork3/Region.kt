@@ -1,4 +1,6 @@
-package com.pliakhanau.myfirstapplication
+package com.pliakhanau.myfirstapplication.homeWork3
+
+import com.pliakhanau.myfirstapplication.homeWork3.City
 
 object Region {
     val Minsk = City("Минск")

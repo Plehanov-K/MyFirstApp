@@ -1,10 +1,11 @@
-package com.pliakhanau.myfirstapplication
+package com.pliakhanau.myfirstapplication.homeWork3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.pliakhanau.myfirstapplication.R
 import kotlinx.android.synthetic.main.activity_vegetables.*
 
 class VegetablesActivity : AppCompatActivity() {

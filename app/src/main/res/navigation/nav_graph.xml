@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/coffeStartFragment">
+
+    <fragment
+        android:id="@+id/coffeStartFragment"
+        android:name="com.pliakhanau.myfirstapplication.homeWork4.CoffeStartFragment"
+        android:label="fragment_coffe_start"
+        tools:layout="@layout/fragment_coffe_start" >
+        <action
+            android:id="@+id/action_coffeStartFragment_to_addCoffeeFragment"
+            app:destination="@id/addCoffeeFragment" />
+        <action
+            android:id="@+id/action_coffeStartFragment_to_coffeShopFragment"
+            app:destination="@id/coffeShopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCoffeeFragment"
+        android:name="com.pliakhanau.myfirstapplication.homeWork4.AddCoffeeFragment"
+        android:label="fragment_add_coffee"
+        tools:layout="@layout/fragment_add_coffee" />
+    <fragment
+        android:id="@+id/coffeShopFragment"
+        android:name="com.pliakhanau.myfirstapplication.homeWork4.CoffeShopFragment"
+        android:label="fragment_coffe_shop"
+        tools:layout="@layout/fragment_coffe_shop" />
+</navigation>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorMainView"
     android:orientation="vertical"
-    tools:context=".VegetablesActivity">
+    tools:context=".homeWork3.VegetablesActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
