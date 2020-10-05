@@ -7,6 +7,7 @@ import com.pliakhanau.myfirstapplication.homeWork1.PicassoActivity
 import com.pliakhanau.myfirstapplication.homeWork2.AnimationFlagsActivity
 import com.pliakhanau.myfirstapplication.homeWork3.VegetablesActivity
 import com.pliakhanau.myfirstapplication.homeWork4.CoffeeActivity
+import com.pliakhanau.myfirstapplication.homeWork5.VerificationActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,5 +31,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CoffeeActivity::class.java))
         }
 
+        buttonVerification.setOnClickListener {
+            startActivity(Intent(this, VerificationActivity::class.java))
+        }
     }
 }

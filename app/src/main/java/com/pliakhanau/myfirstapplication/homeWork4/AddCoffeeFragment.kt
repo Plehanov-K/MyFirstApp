@@ -12,10 +12,6 @@ import kotlinx.android.synthetic.main.fragment_add_coffee.*
 
 class AddCoffeeFragment : Fragment() {
 
-    interface AddCoffeeFragmentInterface {
-        fun onButtonClick(str:String)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

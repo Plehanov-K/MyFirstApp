@@ -23,5 +23,11 @@
     <string name="btnCollections">Коллекция</string>
     <string name="btnAddCoffee">Добавить кофе</string>
     <string name="btnAdd">Добавить</string>
-
+    <string name="buttonVerification">Verification</string>
+    <string name="buttonRegister">Register</string>
+    <string name="textFieldName">Name</string>
+    <string name="textFieldPassword">Password</string>
+    <string name="buttonOk">Ok</string>
+    <string name="supporting_text">Registration was successful</string>
+    <string name="buttonSignIn">SignIn</string>
 </resources>
