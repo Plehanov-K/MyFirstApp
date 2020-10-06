@@ -8,6 +8,22 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/buttonVerification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/my_button"
+        android:text="@string/buttonVerification"
+        android:textColor="@color/colorButton"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCoffee" />
+
+    <Button
         android:id="@+id/buttonPicasso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,10 +35,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.136" />
 
     <Button
         android:id="@+id/buttonFlagsAnimation"
