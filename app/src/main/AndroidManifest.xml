@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".homeWork5.WelcomActivity"></activity>
+        <activity android:name=".mothersDay.GreetingActivity"></activity>
+        <activity android:name=".mothersDay.MothersDayActivity" />
+        <activity android:name=".homeWork5.WelcomActivity" />
         <activity android:name=".homeWork5.VerificationActivity" />
         <activity android:name=".homeWork4.CoffeeActivity" />
         <activity android:name=".homeWork3.VegetablesActivity" />

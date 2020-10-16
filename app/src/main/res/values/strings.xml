@@ -30,4 +30,11 @@
     <string name="buttonOk">Ok</string>
     <string name="supporting_text">Registration was successful</string>
     <string name="buttonSignIn">SignIn</string>
+    <string name="buttonMothersDay">MothersDay</string>
+    <string name="congratulation">"
+Желаю
+   светлых, ясных дней,
+       Здоровья и удачи!
+          Ты береги себя и знай,
+              Что очень много значишь!"</string>
 </resources>
