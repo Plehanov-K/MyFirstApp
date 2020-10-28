@@ -1,4 +1,4 @@
-package com.pliakhanau.myfirstapplication.mothersDay
+package com.pliakhanau.myfirstapplication.homeWorkMothersDay
 
 import android.content.Intent
 import android.os.Bundle
@@ -38,13 +38,13 @@ class MothersDayActivity : AppCompatActivity() {
         }
     }
 
-    private suspend fun bounceFrame() {
+    private fun bounceFrame() {
         YoYo.with(Techniques.BounceIn)
             .duration(3000)
             .playOn(imageViewFrameHeart)
     }
 
-    private suspend fun pulseButton() {
+    private  fun pulseButton() {
         YoYo.with(Techniques.Pulse)
             .duration(2000)
             .playOn(buttonHeart)
@@ -52,25 +52,25 @@ class MothersDayActivity : AppCompatActivity() {
 
     private suspend fun fadeHeart() {
         YoYo.with(Techniques.FadeOut)
-            .duration(1500)
+            .duration(1000)
             .playOn(littleHeartLeft)
 
         YoYo.with(Techniques.FadeInUp)
-            .duration(1500)
+            .duration(2000)
             .playOn(littleHeartRight)
 
-        delay(750)
+        delay(1000)
 
         YoYo.with(Techniques.FadeInUp)
-            .duration(1500)
+            .duration(2000)
             .playOn(littleHeartLeft)
 
-        delay(750)
+        delay(1000)
 
         YoYo.with(Techniques.FadeOut)
-            .duration(750)
+            .duration(1000)
             .playOn(littleHeartRight)
 
-        delay(750)
+        delay(1000)
     }
 }

@@ -37,9 +37,11 @@
        Здоровья и удачи!
           Ты береги себя и знай,
               Что очень много значишь!"</string>
-
     <string name="buttondatabase">DataBase</string>
     <string name="add">Add</string>
     <string name="network">Network</string>
     <string name="get_rates">Get rates</string>
+
+
+
 </resources>
