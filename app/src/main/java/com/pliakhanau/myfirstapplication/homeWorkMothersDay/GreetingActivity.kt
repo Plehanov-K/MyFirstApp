@@ -1,11 +1,10 @@
-package com.pliakhanau.myfirstapplication.mothersDay
+package com.pliakhanau.myfirstapplication.homeWorkMothersDay
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.pliakhanau.myfirstapplication.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_greeting.*
-import kotlinx.android.synthetic.main.fragment_coffe_shop.*
 
 class GreetingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
