@@ -9,7 +9,7 @@
         android:id="@+id/coffeStartFragment"
         android:name="com.pliakhanau.myfirstapplication.homeWork4.CoffeStartFragment"
         android:label="fragment_coffe_start"
-        tools:layout="@layout/fragment_coffe_start" >
+        tools:layout="@layout/fragment_coffe_start">
         <action
             android:id="@+id/action_coffeStartFragment_to_addCoffeeFragment"
             app:destination="@id/addCoffeeFragment" />
@@ -27,4 +27,24 @@
         android:name="com.pliakhanau.myfirstapplication.homeWork4.CoffeShopFragment"
         android:label="fragment_coffe_shop"
         tools:layout="@layout/fragment_coffe_shop" />
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.pliakhanau.myfirstapplication.homeWorkBackendless.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.pliakhanau.myfirstapplication.homeWorkBackendless.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
 </navigation>

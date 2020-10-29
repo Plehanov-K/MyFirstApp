@@ -27,7 +27,7 @@
     <string name="buttonRegister">Register</string>
     <string name="textFieldName">Name</string>
     <string name="textFieldPassword">Password</string>
-    <string name="buttonOk">Ok</string>
+    <string name="buttonOk">OK</string>
     <string name="supporting_text">Registration was successful</string>
     <string name="buttonSignIn">SignIn</string>
     <string name="buttonMothersDay">MothersDay</string>
@@ -37,4 +37,24 @@
        Здоровья и удачи!
           Ты береги себя и знай,
               Что очень много значишь!"</string>
+
+    <string name="buttondatabase">DataBase</string>
+    <string name="add">Add</string>
+    <string name="network">Network</string>
+    <string name="get_rates">Get rates</string>
+    <string name="backendless">Backendless</string>
+    <string name="title_activity_backendless">BackendlessActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="clients">Clients</string>
+    <string name="input">text</string>
+    <string name="last_name_input">last name</string>
+    <string name="input_deposit">Deposit</string>
+    <string name="add_client">Add client</string>
 </resources>
