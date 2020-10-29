@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.backendless.entity.Client
 import com.pliakhanau.myfirstapplication.R
 import com.pliakhanau.myfirstapplication.homeWorkBackendless.viewModel.ClientViewModel
+import com.pliakhanau.myfirstapplication.homeWorkBackendless.viewModel.objectId
 import kotlinx.android.synthetic.main.item.view.*
 
 class PersonAdapter(private val fragment :Fragment) : RecyclerView.Adapter<PersonAdapter.PersonVH>() {
@@ -37,14 +38,14 @@ class PersonAdapter(private val fragment :Fragment) : RecyclerView.Adapter<Perso
         holder.itemView.item_first_name.text = listRates[position].firstName
         holder.itemView.item_last_name.text = listRates[position].lastName
         holder.itemView.item_deposit.text = listRates[position].deposit.toString().plus("$")
-        val objectId=listRates[position].objectId
+        val objectID=listRates[position].objectId
 
         holder.itemView.item_delete_button.setOnClickListener {
-            viewModel.deleteClient(objectId)
+            viewModel.deleteClient(objectID)
         }
 
         holder.itemView.item_edit_button.setOnClickListener {
-            viewModel.objectId = objectId
+            objectId = objectID
             val nav = fragment as ButtonClick
             nav.onBtnEdit()
         }

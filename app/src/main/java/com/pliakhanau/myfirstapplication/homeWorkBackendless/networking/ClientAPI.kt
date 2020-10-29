@@ -36,7 +36,7 @@ interface ClientAPI {
     ):Deferred<Response<Unit>>
 
 
-    @PUT("{key}/data/Clients/")
+    @PUT("{key}/data/Clients")
     fun editClient(
         @Path("key")
         key:String,

@@ -7,22 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.text.isDigitsOnly
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.backendless.dto.request.ClientAddRequest
-import com.example.backendless.dto.request.ClientEditRequest
-import com.example.backendless.networking.REST_KEY
-import com.example.backendless.retrofit.RetrofitFactory
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.pliakhanau.myfirstapplication.R
 import com.pliakhanau.myfirstapplication.homeWorkBackendless.viewModel.ClientViewModel
 import kotlinx.android.synthetic.main.fragment_second.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-
 
 class SecondFragment : Fragment() {
 

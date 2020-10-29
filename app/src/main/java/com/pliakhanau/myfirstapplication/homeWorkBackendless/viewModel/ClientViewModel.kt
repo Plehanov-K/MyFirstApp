@@ -14,22 +14,27 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+var toastMessage = MutableLiveData<String>()
+var listRates = MutableLiveData<List<Client>>()
+var objectId: String? = null
+
 class ClientViewModel : ViewModel() {
     init {
         uploadAllClients()
     }
 
-    var toastMessage = MutableLiveData<String>()
-    var listRates = MutableLiveData<List<Client>>()
-    var objectId: String? =null
-//        "40C8D4CE-BC47-4F25-A571-6E8C25316445"
     fun deleteClient(id: String) {
         CoroutineScope(Dispatchers.IO).launch {
             val result = RetrofitFactory.provideAPI().deleteClientAsync(REST_KEY, id).await()
             if (result.isSuccessful) {
-                    toastMessage.postValue("Client deleted")
+                withContext(Dispatchers.Main) {
+                    toastMessage.value = ("Client deleted")
+                }
+                uploadAllClients()
             } else {
-                    toastMessage.postValue("Error deleted")
+                withContext(Dispatchers.Main) {
+                    toastMessage.value = ("Error deleted")
+                }
             }
         }
     }
@@ -43,22 +48,30 @@ class ClientViewModel : ViewModel() {
                     val rates: List<Client>? = ratesResponse?.map {
                         ClientMappers().convert(it)
                     }
-                    listRates.postValue(rates)
+                    listRates.value = (rates)
                 }
-            } else {
-                    toastMessage.postValue("Error")
+            } else withContext(Dispatchers.Main) {
+                toastMessage.value = ("Error")
             }
         }
     }
 
+
     fun addClient(request: ClientAddRequest) {
-        if (objectId == null) {
+        if (objectId.isNullOrEmpty()) {
             CoroutineScope(Dispatchers.IO).launch {
                 val result = RetrofitFactory.provideAPI().addClient(REST_KEY, request).await()
                 if (result.isSuccessful) {
-                        toastMessage.postValue("Client added")
+                    withContext(Dispatchers.Main) {
+                        withContext(Dispatchers.Main) {
+                            toastMessage.value = ("Client added")
+                        }
+                    }
+                    uploadAllClients()
                 } else {
-                        toastMessage.postValue("Error added")
+                    withContext(Dispatchers.Main) {
+                        toastMessage.value = ("Error added")
+                    }
                 }
             }
         } else {
@@ -73,9 +86,15 @@ class ClientViewModel : ViewModel() {
                     REST_KEY, request
                 ).await()
                 if (result.isSuccessful) {
-                        toastMessage.postValue("Client edited")
+                    withContext(Dispatchers.Main) {
+                        toastMessage.value = "Client edited"
+                        objectId = null
+                    }
+                    uploadAllClients()
                 } else {
-                        toastMessage.postValue("Error edited")
+                    withContext(Dispatchers.Main) {
+                        toastMessage.value = ("Error edited")
+                    }
                 }
             }
         }
