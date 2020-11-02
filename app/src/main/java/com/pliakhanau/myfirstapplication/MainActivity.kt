@@ -11,6 +11,8 @@ import com.pliakhanau.myfirstapplication.homeWork5.VerificationActivity
 
 import com.pliakhanau.myfirstapplication.homeWorkMothersDay.MothersDayActivity
 import com.pliakhanau.myfirstapplication.homeWorkDataBase.ShopActivity
+import com.pliakhanau.myfirstapplication.homeWorkNetwork.NetworkActivity
+import com.pliakhanau.myfirstapplication.homeWorkTimer.TimerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -44,10 +46,17 @@ class MainActivity : AppCompatActivity() {
 
         buttonNetwork.setOnClickListener {
             startActivity(Intent(this, NetworkActivity::class.java))
+        }
 
         buttonShop.setOnClickListener {
             startActivity(Intent(this, ShopActivity::class.java))
 
         }
+        buttonTimer.setOnClickListener {
+            startActivity(Intent(this, TimerActivity::class.java))
+
+        }
+
     }
 }
+

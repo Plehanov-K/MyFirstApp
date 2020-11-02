@@ -41,7 +41,8 @@
     <string name="add">Add</string>
     <string name="network">Network</string>
     <string name="get_rates">Get rates</string>
-
+    <string name="timer">Timer</string>
+    <string name="start">Start</string>
 
 
 </resources>
