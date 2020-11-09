@@ -19,6 +19,12 @@
         <activity android:name=".homeWorkDataBase.ShopActivity" />
         <activity android:name=".homeWorkMothersDay.GreetingActivity" />
         <activity android:name=".homeWorkMothersDay.MothersDayActivity" />
+        <activity
+            android:name=".homeWorkBackendless.BackendlessActivity"
+            android:label="@string/title_activity_backendless"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".mothersDay.GreetingActivity" />
+        <activity android:name=".mothersDay.MothersDayActivity" />
         <activity android:name=".homeWork5.WelcomActivity" />
         <activity android:name=".homeWork5.VerificationActivity" />
         <activity android:name=".homeWork4.CoffeeActivity" />
