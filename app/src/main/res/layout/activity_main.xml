@@ -117,7 +117,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonMothersDay" />
 
-
     <Button
         android:id="@+id/buttonNetwork"
         android:layout_width="match_parent"
@@ -133,5 +132,22 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonShop" />
+
+
+    <Button
+        android:id="@+id/buttonBackendless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/my_button"
+        android:text="@string/backendless"
+        android:textColor="@color/colorButton"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNetwork" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
