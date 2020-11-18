@@ -56,4 +56,6 @@
     <string name="last_name_input">last name</string>
     <string name="input_deposit">Deposit</string>
     <string name="add_client">Add client</string>
+    <string name="luxmeter">luxmeter</string>
+    <string name="tests">tests</string>
 </resources>
