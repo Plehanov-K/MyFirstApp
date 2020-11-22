@@ -195,7 +195,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonLuxmeter" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

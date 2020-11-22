@@ -10,5 +10,4 @@ interface CoinApi {
         @GET("v1/cryptocurrency/listings/latest")
         fun getRates(
         ): Deferred<Response<CoinResponse>>
-
 }

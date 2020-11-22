@@ -16,6 +16,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".homeWorkLuxmeter.LuxmeterActivity"/>
+        <receiver android:name=".homeWorkWidget.widget.WeatherWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_widget_info" />
+        </receiver>
+        <activity android:name=".homeWorkWidget.widget.WeatherWidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
         <activity android:name=".homeWorkTimer.TimerActivity" />
         <activity android:name=".homeWorkDataBase.ShopActivity" />
         <activity android:name=".homeWorkMothersDay.GreetingActivity" />
@@ -33,6 +46,7 @@
         <activity android:name=".homeWork2.AnimationFlagsActivity" />
         <activity android:name=".homeWorkNetwork.NetworkActivity" />
         <activity android:name=".homeWork1.PicassoActivity" />
+        <activity android:name=".homeWorkWidget.WeatherActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
