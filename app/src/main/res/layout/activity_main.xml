@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,159 +7,164 @@
     android:background="@color/colorMainView"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/buttonPicasso"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:text="@string/buttonPicasso"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/buttonFlagsAnimation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/my_button"
-        android:text="@string/buttonFlagsAnimation"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPicasso" />
+        <Button
+            android:id="@+id/buttonPicasso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/buttonPicasso"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07" />
 
-    <Button
-        android:id="@+id/buttonVegetables"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/my_button"
-        android:text="@string/vegetables"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFlagsAnimation" />
+        <Button
+            android:id="@+id/buttonFlagsAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/buttonFlagsAnimation"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPicasso" />
 
-    <Button
-        android:id="@+id/buttonCoffee"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:text="@string/buttonCoffee"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonVegetables" />
+        <Button
+            android:id="@+id/buttonVegetables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/vegetables"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFlagsAnimation" />
 
-    <Button
-        android:id="@+id/buttonVerification"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:text="@string/buttonVerification"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCoffee" />
-    <Button
-        android:id="@+id/buttonMothersDay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:text="@string/buttonMothersDay"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonVerification" />
+        <Button
+            android:id="@+id/buttonCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/buttonCoffee"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonVegetables" />
 
-    <Button
-        android:id="@+id/buttonShop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:text="@string/buttondatabase"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMothersDay" />
+        <Button
+            android:id="@+id/buttonVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/buttonVerification"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCoffee" />
 
-    <Button
-        android:id="@+id/buttonNetwork"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:text="@string/network"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonShop" />
+        <Button
+            android:id="@+id/buttonMothersDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/buttonMothersDay"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonVerification" />
+
+        <Button
+            android:id="@+id/buttonShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/buttondatabase"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMothersDay" />
+
+        <Button
+            android:id="@+id/buttonNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/network"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonShop" />
 
 
-    <Button
-        android:id="@+id/buttonBackendless"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:text="@string/backendless"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonNetwork" />
-  
-  
-    <Button
-        android:id="@+id/buttonTimer"
-        android:text="@string/timer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/my_button"
-        android:textColor="@color/colorButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBackendless" />
-  
-       
+        <Button
+            android:id="@+id/buttonBackendless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/backendless"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonNetwork" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/buttonTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/my_button"
+            android:text="@string/timer"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBackendless" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
