@@ -3,7 +3,7 @@
     package="com.pliakhanau.myfirstapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:name=".homeWorkTimer.App"
@@ -15,16 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".homeWorkTimer.TimerActivity"/>
+        <activity android:name=".homeWorkRxJava.CovidActivity"/>
+        <activity android:name=".homeWorkTimer.TimerActivity" />
         <activity android:name=".homeWorkDataBase.ShopActivity" />
         <activity android:name=".homeWorkMothersDay.GreetingActivity" />
         <activity android:name=".homeWorkMothersDay.MothersDayActivity" />
         <activity
             android:name=".homeWorkBackendless.BackendlessActivity"
             android:label="@string/title_activity_backendless"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".mothersDay.GreetingActivity" />
-        <activity android:name=".mothersDay.MothersDayActivity" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".homeWork5.WelcomActivity" />
         <activity android:name=".homeWork5.VerificationActivity" />
         <activity android:name=".homeWork4.CoffeeActivity" />
@@ -41,7 +40,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".homeWorkTimer.MyForegroundService"/>
+
+        <service android:name=".homeWorkTimer.MyForegroundService" />
     </application>
 
 </manifest>
