@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         buttonTimer.setOnClickListener {
             startActivity(Intent(this, TimerActivity::class.java))
         }
-
+      
         buttonLuxmeter.setOnClickListener {
             startActivity(Intent(this, LuxmeterActivity::class.java))
         }
@@ -73,7 +73,6 @@ class MainActivity : AppCompatActivity() {
         buttonTests.setOnClickListener {
             startActivity(Intent(this, TestsActivity::class.java))
         }
-
     }
 }
 

@@ -13,5 +13,9 @@
     <color name="colorFlagStiletto">#9e3139</color>
     <color name="colorFlagYellow">#fff718</color>
     <color name="colorGold">#E8DD81</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
 
 </resources>
