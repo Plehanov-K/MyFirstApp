@@ -11,10 +11,11 @@ import com.pliakhanau.myfirstapplication.homeWork5.VerificationActivity
 import com.pliakhanau.myfirstapplication.homeWorkBackendless.BackendlessActivity
 import com.pliakhanau.myfirstapplication.homeWorkMothersDay.MothersDayActivity
 import com.pliakhanau.myfirstapplication.homeWorkDataBase.ShopActivity
-//import com.pliakhanau.myfirstapplication.homeWorkLuxmeter.LuxmeterActivity
 import com.pliakhanau.myfirstapplication.homeWorkNetwork.NetworkActivity
 import com.pliakhanau.myfirstapplication.homeWorkRxJava.CovidActivity
-//import com.pliakhanau.myfirstapplication.homeWorkTests.TestsActivity
+import com.pliakhanau.myfirstapplication.homeWorkLuxmeter.LuxmeterActivity
+import com.pliakhanau.myfirstapplication.homeWorkNetwork.NetworkActivity
+import com.pliakhanau.myfirstapplication.homeWorkTests.TestsActivity
 import com.pliakhanau.myfirstapplication.homeWorkTimer.TimerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -67,18 +68,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, TimerActivity::class.java))
         }
 
-//        buttonLuxmeter.setOnClickListener {
-//            startActivity(Intent(this, LuxmeterActivity::class.java))
-//        }
-//
-//        buttonTests.setOnClickListener {
-//            startActivity(Intent(this, TestsActivity::class.java))
-//        }
-
         buttonRxJava.setOnClickListener {
             startActivity(Intent(this, CovidActivity::class.java))
         }
+      
+        buttonLuxmeter.setOnClickListener {
+            startActivity(Intent(this, LuxmeterActivity::class.java))
+        }
 
+        buttonTests.setOnClickListener {
+            startActivity(Intent(this, TestsActivity::class.java))
+        }
     }
 }
 

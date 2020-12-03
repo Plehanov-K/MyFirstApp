@@ -61,4 +61,10 @@
     <string name="enter_number">Введите число</string>
     <string name="covid19">Covid19</string>
     <string name="update">Update</string>
+    <string name="appwidget_text">City</string>
+    <string name="configure">City</string>
+    <string name="add_widget">Add widget</string>
+    <string name="clouds">Clouds</string>
+    <string name="change_city">Change city</string>
+
 </resources>
