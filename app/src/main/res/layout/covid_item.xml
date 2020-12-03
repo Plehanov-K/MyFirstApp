@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_flag"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/country_covid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_flag"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Country" />
+
+    <TextView
+        android:id="@+id/total_confirmed"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/image_flag"
+        app:layout_constraintTop_toBottomOf="@+id/country_covid"
+        tools:text="Total confirmed - " />
+
+    <TextView
+        android:id="@+id/price_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_flag"
+        app:layout_constraintTop_toBottomOf="@+id/total_confirmed"
+        tools:text="Total deaths - " />
+
+    <TextView
+        android:id="@+id/total_recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_flag"
+        app:layout_constraintTop_toBottomOf="@+id/price_deaths"
+        tools:text="Total recovered - " />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:inputType="textAutoComplete"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/total_recovered"
+        app:layout_constraintStart_toStartOf="@+id/total_recovered"
+        app:layout_constraintTop_toBottomOf="@+id/total_recovered" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

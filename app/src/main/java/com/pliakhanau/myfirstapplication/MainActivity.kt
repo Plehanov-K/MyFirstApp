@@ -11,6 +11,8 @@ import com.pliakhanau.myfirstapplication.homeWork5.VerificationActivity
 import com.pliakhanau.myfirstapplication.homeWorkBackendless.BackendlessActivity
 import com.pliakhanau.myfirstapplication.homeWorkMothersDay.MothersDayActivity
 import com.pliakhanau.myfirstapplication.homeWorkDataBase.ShopActivity
+import com.pliakhanau.myfirstapplication.homeWorkNetwork.NetworkActivity
+import com.pliakhanau.myfirstapplication.homeWorkRxJava.CovidActivity
 import com.pliakhanau.myfirstapplication.homeWorkLuxmeter.LuxmeterActivity
 import com.pliakhanau.myfirstapplication.homeWorkNetwork.NetworkActivity
 import com.pliakhanau.myfirstapplication.homeWorkTests.TestsActivity
@@ -64,6 +66,10 @@ class MainActivity : AppCompatActivity() {
 
         buttonTimer.setOnClickListener {
             startActivity(Intent(this, TimerActivity::class.java))
+        }
+
+        buttonRxJava.setOnClickListener {
+            startActivity(Intent(this, CovidActivity::class.java))
         }
       
         buttonLuxmeter.setOnClickListener {
